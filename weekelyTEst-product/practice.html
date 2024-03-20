@@ -1,0 +1,80 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Divs Side by Side</title>
+    <style>
+        .main-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .child-div {
+            width: 50%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="child-div">
+            <!-- Content for the first div -->
+            <!-- <h2>First Div</h2>
+            <p>This is the content of the first div.</p>
+        </div>
+        <div class="child-div">
+            <!-- Content for the second div -->
+            <!-- <h2>Second Div</h2>
+            <p>This is the content of the second div.</p>
+        </div>
+    </div>
+</body>
+</html> --
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Input Fields</title>
+</head>
+<body>
+    <form id="myForm">
+        <!-- Existing input field -->
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Add Input Fields</title>
+        </head>
+        <body>
+            <form id="myForm">
+                <!-- Existing input field -->
+                <input type="text" name="input1" placeholder="Input 1">
+                <button type="button" id="addButton">Add More</button>
+            </form>
+        
+            <script>
+                const form = document.getElementById('myForm');
+                const addButton = document.getElementById('addButton');
+                let counter = 1;
+        
+                addButton.addEventListener('click', () => {
+                    counter++;
+                    const newInput = document.createElement('input');
+                    newInput.type = 'text';
+                    newInput.name = `input${counter}`;
+                    newInput.placeholder = `Input ${counter}`;
+                    form.appendChild(newInput);
+                });
+            </script>
+        </body>
+        </html>
+        
